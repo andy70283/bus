@@ -10,7 +10,10 @@ const router = createRouter({
       name: 'TempLate',
       component: () => import('@/layout/Template.vue'),
     },
-
+    {
+      path: '/',
+      redirect: '/home',
+    },
     {
       path: '/',
       component: FrontView,
