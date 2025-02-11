@@ -12,6 +12,10 @@ const router = createRouter({
     },
     {
       path: '/',
+      redirect: '/home',
+    },
+    {
+      path: '/',
       component: FrontView,
       children: [
         { path: '/', name: 'home', component: () => import('../views/HomePage.vue') },
